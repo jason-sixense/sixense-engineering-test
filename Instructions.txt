@@ -1,0 +1,39 @@
+Project Objective:
+
+For this project, you need to archetect a system that allows us to use three inputs controllers provided to control the provided characters.  This should involve you creating code which will allow a "plug and play" solution to control each of these characters as well as a way to select which character is being moved (only one character should be moved at a time).  
+
+NOTE: The Controller classes are not to be edited.
+
+The three controller simulations provided are:
+Digital Gamepad: 
+
+Has a traditional D-pad and two buttons with boolean behavoir 
+
+Analog Gamepad: 
+Has an analog stick with x/Y that go from -1/1 floating point and two analog buttons that have true/false values of 1/-1 respectively
+
+Motion Conroller
+Has a Yaw/Roll/Pitch with values of +-(180/180/90)° respectively and one analog button that has true/false values of 1/-1 respectively
+
+Note:
+The C# Eventhandler system is being used in these controllers for notification of events:
+https://docs.microsoft.com/en-us/dotnet/standard/events/
+
+The Charcters are:
+Person:
+Takes a direction to move one unit and a jump command
+
+Vehicle:
+Takes a direction vector between -1.0f and 1.0f and a jump command like Person
+
+Drone:
+a simple character that takes a value from -0.5/0.5 in both the X/Y direction. Your task is to create a swarm of these that will move with the input of the controller.
+
+Swarm:
+A collection of Drones
+
+You are given a file (TestManager.cs) of controller inputs to run that try to move these charcters to specific locations in a x/y grid.
+
+Note: As the intepretation of the Motion conroller inputs are up to you, you must also create the expected input/outputs for this as well.
+
+NOTE: Although this project will provide you with a pass/fail evaluation for you code, you will be judged on your architectural solution to the problem.
