@@ -142,7 +142,7 @@ class TestManager {
             System.Diagnostics.Debug.WriteLine(testOutputList[i].icon + " -> " + testOutputList[i].coords.x + ", " + testOutputList[i].coords.y + "|||" + ExpectedTestOutputList[i].coords.x + ", " + ExpectedTestOutputList[i].coords.y);
         }
 
-        System.Diagnostics.Debug.WriteLine("Test Ran with {0} wrong answers", totalIncorrect);
+        System.Console.WriteLine("Test Ran with {0} wrong answers", totalIncorrect);
     }
 
 }
